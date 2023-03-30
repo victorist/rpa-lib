@@ -5,6 +5,9 @@ import pandas as pd
 dir_pdf_table = "rpa-lib/pdf_processing/azurair_manifests/pdf_table/"
 pdf_table = "ZF 2847 29.03.23.pdf"
 
+print("#" * 100)
+print("Проверка наличия библиотекаи ",find_library("gs"))
+print("_pip" * 100)
 
 tables = camelot.read_pdf(dir_pdf_table + pdf_table)
 
